@@ -2,7 +2,7 @@
 
 import numpy as np
 from random import shuffle
-from Hausdorff import dist, update_centroids, update_lambda
+from Euclidean import dist, update_centroids, update_lambda
 
 import matplotlib.pyplot as plt
 import seaborn as sns
