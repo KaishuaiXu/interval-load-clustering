@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 
-def k_means_interval(lowers, uppers, number_of_cluster, iterations):
+def k_means_interval(lowers, uppers, number_of_cluster, max_unchanged_iterations):
 
     number_of_sample = len(uppers)
     dim = len(uppers[0])
@@ -30,8 +30,9 @@ def k_means_interval(lowers, uppers, number_of_cluster, iterations):
     cluster = np.argmin(tmp, axis=0)
 
     test = 1
+    max_iteration = 0
     iteration = 1
-    while test != 0 or iteration < iterations:
+    while test != 0 or max_iteration < max_unchanged_iterations:
 
         # 更新聚类中心
         for k in range(number_of_cluster):
@@ -52,40 +53,45 @@ def k_means_interval(lowers, uppers, number_of_cluster, iterations):
         for i in range(number_of_sample):
             if cluster[i] != original_cluster[i]:
                 test = test + 1
+                max_iteration = 0
+
+        if test == 0:
+            max_iteration = max_iteration + 1
         print('iter =', iteration, 'test =', test)
         iteration = iteration + 1
 
+
     return cluster
 
-# 测试样本
-n_sample = 100
-n_clusters = 2
-iteration = 50
-
-center1 = [1, 1]
-center2 = [3, 3]
-
-data_u = []
-data_l = []
-data = [center1] + [center2]
-for i in range(int(n_sample/2)):
-    data.append([center1[0] + np.random.random() * 1 - 0.5, center1[1] + np.random.random() * 1 - 0.5])
-    r = np.random.random() * 0.5
-    data_u.append([data[-1][0] + r, data[-1][1] + r])
-    data_l.append([data[-1][0] - r, data[-1][1] - r])
-    data.append([center2[0] + np.random.random() * 1 - 0.5, center2[1] + np.random.random() * 1 - 0.5])
-    r = np.random.random() * 0.5
-    data_u.append([data[-1][0] + r, data[-1][1] + r])
-    data_l.append([data[-1][0] - r, data[-1][1] - r])
-
-result = k_means_interval(np.array(data_l), np.array(data_u), n_clusters, iteration)
-
-res={"x":[],"y":[],"kmeans_res":[]}
-
-for i in range(len(result)):
-    res["x"].append(data_u[i][0])
-    res["y"].append(data_u[i][1])
-    res["kmeans_res"].append(result[i])
-pd_res = pd.DataFrame(res)
-sns.lmplot("x","y",data=pd_res,fit_reg=False,size=5,hue="kmeans_res")
-plt.show()
+# # 测试样本
+# n_sample = 100
+# n_clusters = 2
+# iteration = 50
+#
+# center1 = [1, 1]
+# center2 = [3, 3]
+#
+# data_u = []
+# data_l = []
+# data = [center1] + [center2]
+# for i in range(int(n_sample/2)):
+#     data.append([center1[0] + np.random.random() * 1 - 0.5, center1[1] + np.random.random() * 1 - 0.5])
+#     r = np.random.random() * 0.5
+#     data_u.append([data[-1][0] + r, data[-1][1] + r])
+#     data_l.append([data[-1][0] - r, data[-1][1] - r])
+#     data.append([center2[0] + np.random.random() * 1 - 0.5, center2[1] + np.random.random() * 1 - 0.5])
+#     r = np.random.random() * 0.5
+#     data_u.append([data[-1][0] + r, data[-1][1] + r])
+#     data_l.append([data[-1][0] - r, data[-1][1] - r])
+#
+# result = k_means_interval(np.array(data_l), np.array(data_u), n_clusters, iteration)
+#
+# res={"x":[],"y":[],"kmeans_res":[]}
+#
+# for i in range(len(result)):
+#     res["x"].append(data_u[i][0])
+#     res["y"].append(data_u[i][1])
+#     res["kmeans_res"].append(result[i])
+# pd_res = pd.DataFrame(res)
+# sns.lmplot("x","y",data=pd_res,fit_reg=False,size=5,hue="kmeans_res")
+# plt.show()
