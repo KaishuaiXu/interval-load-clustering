@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4681c0d6-a6c4-4fa1-a8c8-00560ff9d46c" name="Default Changelist" comment="" />
+    <list default="true" id="4681c0d6-a6c4-4fa1-a8c8-00560ff9d46c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/IntervalClustering/KMeans.py" beforeDir="false" afterPath="$PROJECT_DIR$/IntervalClustering/KMeans.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preprocess/PointToInterval.py" beforeDir="false" afterPath="$PROJECT_DIR$/Preprocess/PointToInterval.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,33 +24,45 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="9" />
+          <entry key="py" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="9" />
+          <entry key="Python" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="30" />
+          <entry key="py" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="30" />
+          <entry key="Python" value="42" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/interval clustering/KMeans.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IntervalClustering/KMeans.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="204">
+              <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+              <folding>
+                <element signature="e#25#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Preprocess/PointToInterval.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -61,6 +76,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/interval clustering/KMeans.py" />
+        <option value="$PROJECT_DIR$/IntervalClustering/KMeans.py" />
+        <option value="$PROJECT_DIR$/Preprocess/PointToInterval.py" />
       </list>
     </option>
   </component>
@@ -91,12 +108,12 @@
             <path>
               <item name="IntervalLoadForecasting" type="b2602c69:ProjectViewProjectNode" />
               <item name="IntervalLoadForecasting" type="462c0819:PsiDirectoryNode" />
-              <item name="interval clustering" type="462c0819:PsiDirectoryNode" />
+              <item name="IntervalClustering" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="IntervalLoadForecasting" type="b2602c69:ProjectViewProjectNode" />
               <item name="IntervalLoadForecasting" type="462c0819:PsiDirectoryNode" />
-              <item name="preprocess" type="462c0819:PsiDirectoryNode" />
+              <item name="Preprocess" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -205,22 +222,13 @@
     <entry file="file://$PROJECT_DIR$/interval clustering/GenerateSample.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/preprocess/PointToInterval.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/preprocess/NextDay.py">
+    <entry file="file://$PROJECT_DIR$/Preprocess/NextDay.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/preprocess/Monthly.py">
+    <entry file="file://$PROJECT_DIR$/Preprocess/Monthly.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/preprocess/CleanSeries.py">
+    <entry file="file://$PROJECT_DIR$/Preprocess/CleanSeries.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
@@ -234,8 +242,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/interval clustering/KMeans.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#25#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntervalClustering/KMeans.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <element signature="e#25#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Preprocess/PointToInterval.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
         </state>
       </provider>
     </entry>

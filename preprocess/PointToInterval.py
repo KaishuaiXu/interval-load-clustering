@@ -1,6 +1,6 @@
 import mysql.connector as mc
 import pandas as pd
-from NextDay import next_day
+from Preprocess.NextDay import next_day
 
 con = mc.connect(host='***', user='root', password='***', database='Irish_smart_meter')
 cursor = con.cursor()
