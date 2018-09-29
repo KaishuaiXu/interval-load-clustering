@@ -1,4 +1,4 @@
-from IntervalClustering.KMeans import k_means_interval
+from interval_clustering.KMeans import k_means_interval
 import pandas as pd
 import os
 
