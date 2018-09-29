@@ -37,7 +37,7 @@ def k_means_interval(lowers, uppers, number_of_cluster, max_unchanged_iterations
         # 更新聚类中心
         for k in range(number_of_cluster):
             assignment = np.squeeze(np.where(cluster == k))
-            print(assignment.shape)
+            # print(assignment.shape)
 
             [centroids_lower[k], centroids_upper[k]] = update_centroids(lowers, uppers, assignment)
 

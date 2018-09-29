@@ -11,13 +11,12 @@ def mkdir(path):
 if __name__ == '__main__':
 
     month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-    path = '../load_data/meters.csv'
+    path = '../meters.csv'
     meters = pd.read_csv(path)
     for i in range(len(meters)):
         if i % 100 == 0:
             print(i)
-        path_file = '../load_data_monthly/%d' % (meters['meter_id'][i])
-        mkdir(path_file)
+
         path = '../load_data/%d.csv' % meters['meter_id'][i]
         data = pd.read_csv(path)
         for m in range(12):
@@ -34,9 +33,9 @@ if __name__ == '__main__':
                 tmp_u = tmp_u + upper[j*24:(j+1)*24]
             tmp_l = tmp_l / int(len(d)/24)
             tmp_u = tmp_u / int(len(d)/24)
-            path = '../load_data_monthly/%d/%d_lower.csv' % (meters['meter_id'][i], m+1)
+            path = '../load_data_monthly/%d_%d_lower.csv' % (meters['meter_id'][i], m + 1)
             pd.DataFrame(tmp_l).to_csv(path, index=False, header=None)
-            path = '../load_data_monthly/%d/%d_upper.csv' % (meters['meter_id'][i], m + 1)
+            path = '../load_data_monthly/%d_%d_upper.csv' % (meters['meter_id'][i], m + 1)
             pd.DataFrame(tmp_u).to_csv(path, index=False, header=None)
 
             # break

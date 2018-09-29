@@ -11,8 +11,8 @@ for m in range(12):
     print(m + 1)
     for i in range(len(meters)):
 
-        path_l = '../load_data_monthly/%d/%d_lower.csv' % (meters['meter_id'][i], m + 1)
-        path_u = '../load_data_monthly/%d/%d_upper.csv' % (meters['meter_id'][i], m + 1)
+        path_l = '../load_data_monthly/%d_%d_lower.csv' % (meters['meter_id'][i], m + 1)
+        path_u = '../load_data_monthly/%d_%d_upper.csv' % (meters['meter_id'][i], m + 1)
         tmp_l = pd.read_csv(path_l, header=None)
         tmp_u = pd.read_csv(path_u, header=None)
 
