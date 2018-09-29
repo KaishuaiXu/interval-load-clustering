@@ -22,5 +22,5 @@ for i in range(len(type)):
 
 meters = pd.DataFrame(refined_series)
 meters.columns = ['meter_id']
-meters.to_csv('meters.csv', index=False)
+meters.to_csv('../meters.csv', index=False)
 

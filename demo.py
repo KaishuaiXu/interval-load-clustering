@@ -8,8 +8,8 @@ def mkdir(path):
         os.makedirs(path)
 
 common_path = '/Users/XKS/Desktop'
-max_unchanged_iterations = 50
-for number_of_cluster in range(2, 11):
+max_unchanged_iterations = 20
+for number_of_cluster in range(6, 11):
 
     for m in range(12):
         path = common_path + '/load_data_normalized/%d_lower.csv' % (m + 1)

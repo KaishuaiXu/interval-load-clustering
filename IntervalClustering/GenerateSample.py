@@ -3,7 +3,7 @@
 import pandas as pd
 import numpy as np
 
-meters = pd.read_csv('/Users/XKS/Desktop/load_data_monthly/meters.csv')
+meters = pd.read_csv('../meters.csv')
 
 for m in range(12):
     lower = []
@@ -11,8 +11,8 @@ for m in range(12):
     print(m + 1)
     for i in range(len(meters)):
 
-        path_l = '/Users/XKS/Desktop/load_data_monthly/%d/%d_lower.csv' % (meters['meter_id'][i], m + 1)
-        path_u = '/Users/XKS/Desktop/load_data_monthly/%d/%d_upper.csv' % (meters['meter_id'][i], m + 1)
+        path_l = '../load_data_monthly/%d/%d_lower.csv' % (meters['meter_id'][i], m + 1)
+        path_u = '../load_data_monthly/%d/%d_upper.csv' % (meters['meter_id'][i], m + 1)
         tmp_l = pd.read_csv(path_l, header=None)
         tmp_u = pd.read_csv(path_u, header=None)
 
@@ -31,9 +31,9 @@ for m in range(12):
     lower = (lower - minimum) / (maximum - minimum)
     upper = (upper - minimum) / (maximum - minimum)
 
-    pd.DataFrame(lower).to_csv('/Users/XKS/Desktop/load_data_normalized/%d_lower.csv' % (m + 1),
+    pd.DataFrame(lower).to_csv('../load_data_normalized/%d_lower.csv' % (m + 1),
                                index=False, header=None)
-    pd.DataFrame(upper).to_csv('/Users/XKS/Desktop/load_data_normalized/%d_upper.csv' % (m + 1),
+    pd.DataFrame(upper).to_csv('../load_data_normalized/%d_upper.csv' % (m + 1),
                                index=False, header=None)
 
     # break
