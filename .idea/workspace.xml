@@ -2,55 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4681c0d6-a6c4-4fa1-a8c8-00560ff9d46c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vagrant.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clusters/10_6.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/10_6.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/10_7.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/10_7.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/10_8.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/10_8.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/10_9.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/10_9.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clusters/11_6.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/11_6.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/11_7.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/11_7.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/11_8.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/11_8.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clusters/12_6.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/12_6.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/12_7.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/12_7.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/12_8.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/12_8.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clusters/1_6.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/1_6.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clusters/1_7.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/1_7.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/1_8.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/1_8.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/1_9.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/1_9.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clusters/2_6.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/2_6.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clusters/2_7.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/2_7.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/2_8.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/2_8.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/2_9.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/2_9.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clusters/3_6.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/3_6.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clusters/3_7.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/3_7.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/3_8.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/3_8.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/3_9.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/3_9.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clusters/4_6.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/4_6.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clusters/4_7.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/4_7.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/4_8.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/4_8.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/4_9.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/4_9.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clusters/5_6.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/5_6.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clusters/5_7.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/5_7.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/5_8.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/5_8.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/5_9.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/5_9.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clusters/6_6.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/6_6.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clusters/6_7.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/6_7.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/6_8.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/6_8.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/6_9.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/6_9.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clusters/7_6.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/7_6.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clusters/7_7.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/7_7.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/7_8.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/7_8.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/7_9.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/7_9.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clusters/8_6.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/8_6.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/8_7.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/8_7.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/8_8.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/8_8.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/8_9.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/8_9.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clusters/9_6.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/9_6.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/9_7.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/9_7.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/9_8.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/9_8.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/9_9.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/9_9.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interval_clustering/KMeans.py" beforeDir="false" afterPath="$PROJECT_DIR$/interval_clustering/KMeans.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +33,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/IntervalLoadForecasting$KMeans.coverage" NAME="KMeans Coverage Results" MODIFIED="1538188645958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interval clustering" />
-    <SUITE FILE_PATH="coverage/IntervalLoadForecasting$demo.coverage" NAME="demo Coverage Results" MODIFIED="1538209979393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/IntervalLoadForecasting$demo.coverage" NAME="demo Coverage Results" MODIFIED="1538371624229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IntervalLoadForecasting$Monthly.coverage" NAME="Monthly Coverage Results" MODIFIED="1538205789345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Preprocess" />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -70,41 +43,51 @@
           <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="49" />
+          <entry key="py" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="49" />
+          <entry key="Python" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="925" />
+          <entry key="py" value="927" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="925" />
+          <entry key="Python" value="927" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="187">
+              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/interval_clustering/KMeans.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
               <folding>
-                <element signature="e#0#54#0" expanded="true" />
+                <element signature="e#25#43#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,8 +114,8 @@
         <option value="$PROJECT_DIR$/Preprocess/CleanSeries.py" />
         <option value="$PROJECT_DIR$/IntervalClustering/GenerateSample.py" />
         <option value="$PROJECT_DIR$/Preprocess/PointToInterval.py" />
-        <option value="$PROJECT_DIR$/interval_clustering/KMeans.py" />
         <option value="$PROJECT_DIR$/demo.py" />
+        <option value="$PROJECT_DIR$/interval_clustering/KMeans.py" />
       </list>
     </option>
   </component>
@@ -285,9 +268,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="728" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25767368" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.26171243" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -297,7 +281,7 @@
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.32861635" />
+      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.32861635" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -322,9 +306,7 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/interval clustering/KMeans.py" />
-    <entry file="file://$PROJECT_DIR$/IntervalClustering/Euclidean.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/IntervalClustering/Euclidean.py" />
     <entry file="file://$PROJECT_DIR$/preprocess/NextDay.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -346,55 +328,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="487">
           <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IntervalClustering/Hausdorff.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IntervalClustering/CityBlock.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IntervalClustering/KMeans.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#25#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IntervalClustering/GenerateSample.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/IntervalClustering/Hausdorff.py" />
+    <entry file="file://$PROJECT_DIR$/IntervalClustering/CityBlock.py" />
+    <entry file="file://$PROJECT_DIR$/IntervalClustering/KMeans.py" />
+    <entry file="file://$PROJECT_DIR$/IntervalClustering/GenerateSample.py" />
     <entry file="file://$PROJECT_DIR$/interval_clustering/Hausdorff.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/interval_clustering/KMeans.py">
+    <entry file="file://$PROJECT_DIR$/interval_clustering/CityBlock.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="134">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="187">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interval_clustering/KMeans.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
           <folding>
-            <element signature="e#0#54#0" expanded="true" />
+            <element signature="e#25#43#0" expanded="true" />
           </folding>
         </state>
       </provider>

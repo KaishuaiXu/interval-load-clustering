@@ -3,7 +3,7 @@ import pandas as pd
 import os
 
 max_unchanged_iterations = 20
-for number_of_cluster in range(6, 11):
+for number_of_cluster in range(10, 11):
 
     for m in range(12):
         path = './load_data_normalized/%d_lower.csv' % (m + 1)
