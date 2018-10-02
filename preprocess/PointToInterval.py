@@ -5,7 +5,7 @@ from Preprocess.NextDay import next_day
 con = mc.connect(host='***', user='root', password='***', database='Irish_smart_meter')
 cursor = con.cursor()
 
-meters = pd.read_csv('../meters.csv')
+meters = pd.read_csv('../data/meters.csv')
 l = len(meters)
 for i in range(l):
     sql = "select * from load_series_1 where meter_id=%d" % (meters['meter_id'][i])
@@ -40,5 +40,5 @@ for i in range(l):
 
     total = pd.concat([date, half_hour, lower, upper], axis=1)
     total.columns = ['date', 'time', 'lower', 'upper']
-    path = '../load_data/%d.csv' % meters['meter_id'][i]
+    path = '../data/load_data/%d.csv' % meters['meter_id'][i]
     total.to_csv(path, index=False)

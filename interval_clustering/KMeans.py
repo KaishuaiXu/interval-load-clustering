@@ -2,7 +2,7 @@
 
 import numpy as np
 from random import shuffle
-from interval_clustering.CityBlock import dist, update_centroids, update_lambda
+from interval_clustering.Euclidean import dist, update_centroids, update_lambda
 
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -64,7 +64,7 @@ def k_means_interval(lowers, uppers, number_of_cluster, max_unchanged_iterations
 
     return cluster
 
-# # 测试样本
+# 测试样本
 # n_sample = 100
 # n_clusters = 2
 # iteration = 50
