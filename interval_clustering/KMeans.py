@@ -37,12 +37,12 @@ def k_means_interval(lowers, uppers, number_of_cluster, max_unchanged_iterations
         # 更新聚类中心
         for k in range(number_of_cluster):
             assignment = np.squeeze(np.where(cluster == k))
-            # print(assignment.shape)
+            print(assignment.shape)
 
             [centroids_lower[k], centroids_upper[k]] = update_centroids(lowers, uppers, assignment)
 
         # 更新权重Lambda
-        lamb = update_lambda(lowers, uppers, centroids_lower, centroids_upper, cluster, dim)
+        # lamb = update_lambda(lowers, uppers, centroids_lower, centroids_upper, cluster, dim)
 
         test = 0
         tmp = dist(lowers, uppers, centroids_lower[0], centroids_upper[0], lamb)
@@ -61,12 +61,11 @@ def k_means_interval(lowers, uppers, number_of_cluster, max_unchanged_iterations
         print('iter =', iteration, 'test =', test)
         iteration = iteration + 1
 
-
     return cluster
 
-# 测试样本
-# n_sample = 100
-# n_clusters = 2
+# # 测试样本
+# n_sample = 1000
+# n_clusters = 5
 # iteration = 50
 #
 # center1 = [1, 1]
