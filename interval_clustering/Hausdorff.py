@@ -30,7 +30,7 @@ def update_lambda(a, b, alpha, beta, cluster, dim):
     tmp_k = np.zeros([dim])
     number_of_cluster = alpha.shape[0]
     for k in range(number_of_cluster):
-        assignment = np.squeeze(np.where(cluster == k))
+        assignment = np.where(cluster == k)[0]
 
         tmp_a = a[assignment[0]]
         for i in range(1, len(assignment)):

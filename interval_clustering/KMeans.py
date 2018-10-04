@@ -3,6 +3,9 @@
 import numpy as np
 from random import shuffle
 from interval_clustering.Euclidean import dist, update_centroids, update_lambda
+from sklearn.cluster.k_means_ import _k_init
+from sklearn.utils.extmath import row_norms
+from sklearn.utils import check_random_state
 
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -12,10 +15,10 @@ def k_means_interval(lowers, uppers, number_of_cluster, max_unchanged_iterations
 
     number_of_sample = len(uppers)
     dim = len(uppers[0])
-    vector_indices = list(range(number_of_sample))
-    shuffle(vector_indices)
 
     # 初始化聚类中心
+    vector_indices = list(range(number_of_sample))
+    shuffle(vector_indices)
     centroids_upper = np.array([uppers[vector_indices[i]] for i in range(number_of_cluster)])
     centroids_lower = np.array([lowers[vector_indices[i]] for i in range(number_of_cluster)])
 
@@ -36,13 +39,16 @@ def k_means_interval(lowers, uppers, number_of_cluster, max_unchanged_iterations
 
         # 更新聚类中心
         for k in range(number_of_cluster):
-            assignment = np.squeeze(np.where(cluster == k))
+            assignment = np.where(cluster == k)[0]
             print(assignment.shape)
+
+            if assignment.shape[0] == 0:
+                return []
 
             [centroids_lower[k], centroids_upper[k]] = update_centroids(lowers, uppers, assignment)
 
         # 更新权重Lambda
-        # lamb = update_lambda(lowers, uppers, centroids_lower, centroids_upper, cluster, dim)
+        lamb = update_lambda(lowers, uppers, centroids_lower, centroids_upper, cluster, dim)
 
         test = 0
         tmp = dist(lowers, uppers, centroids_lower[0], centroids_upper[0], lamb)
