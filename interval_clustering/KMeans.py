@@ -43,7 +43,7 @@ def k_means_interval(lowers, uppers, number_of_cluster, max_unchanged_iterations
             print(assignment.shape)
 
             if assignment.shape[0] == 0:
-                return []
+                return [], 999999
 
             [centroids_lower[k], centroids_upper[k]] = update_centroids(lowers, uppers, assignment)
 
@@ -55,6 +55,8 @@ def k_means_interval(lowers, uppers, number_of_cluster, max_unchanged_iterations
         for k in range(1, number_of_cluster):
             distances = dist(lowers, uppers, centroids_lower[k], centroids_upper[k], lamb)
             tmp = np.vstack((tmp, distances))
+        total_dist = np.min(tmp, axis=0).sum()
+        # print(total_dist)
         original_cluster = cluster
         cluster = np.argmin(tmp, axis=0)
         for i in range(number_of_sample):
@@ -67,7 +69,7 @@ def k_means_interval(lowers, uppers, number_of_cluster, max_unchanged_iterations
         print('iter =', iteration, 'test =', test)
         iteration = iteration + 1
 
-    return cluster
+    return cluster, total_dist
 
 # # 测试样本
 # n_sample = 1000

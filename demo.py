@@ -12,10 +12,20 @@ for number_of_cluster in range(9, 10):
         path = './data/load_data_profiles/%d_upper.csv' % (m + 1)
         upper = pd.read_csv(path, header=None)
         upper = upper.values
+
+        minimum = 9999999
+        best_cluster = []
+
         for times in range(100):
             print('Times: %d' % (times + 1))
-            cluster = k_means_interval(lower, upper, number_of_cluster, max_unchanged_iterations)
+            cluster, total_dist = k_means_interval(lower, upper, number_of_cluster, max_unchanged_iterations)
             if len(cluster):
-                path = './clusters/euclidean/%d_%d.csv' % (m + 1, number_of_cluster)
-                pd.DataFrame(cluster).to_csv(path, header=None, index=False)
+
+                if total_dist < minimum:
+                    best_cluster = cluster
+                    minimum = total_dist
+
             # break
+
+        path = './clusters/euclidean/%d_%d.csv' % (m + 1, number_of_cluster)
+        pd.DataFrame(best_cluster).to_csv(path, header=None, index=False)
