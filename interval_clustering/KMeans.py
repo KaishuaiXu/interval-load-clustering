@@ -3,9 +3,6 @@
 import numpy as np
 from random import shuffle
 from interval_clustering.Euclidean import dist, update_centroids, update_lambda
-from sklearn.cluster.k_means_ import _k_init
-from sklearn.utils.extmath import row_norms
-from sklearn.utils import check_random_state
 
 import matplotlib.pyplot as plt
 import seaborn as sns
