@@ -13,16 +13,8 @@ def next_day(current_day):
         month = 1
         year = year + 1
 
-    if month < 10:
-        m = '0' + str(month)
-    else:
-        m = str(month)
-
-    if day < 10:
-        d = '0' + str(day)
-    else:
-        d = str(day)
-
+    m = '%02d' % month
+    d = '%02d' % day
     y = str(year)
 
     return y + '-' + m + '-' + d

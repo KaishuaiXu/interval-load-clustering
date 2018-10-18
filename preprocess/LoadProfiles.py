@@ -25,15 +25,8 @@ for m in range(12):
     lower = np.array(lower)
     upper = np.array(upper)
 
-    # maximum = np.maximum(np.max(lower), np.max(upper))
-    # minimum = np.maximum(np.min(lower), np.min(upper))
-
-    # lower = (lower - minimum) / (maximum - minimum)
-    # upper = (upper - minimum) / (maximum - minimum)
-
     pd.DataFrame(lower).to_csv('../data/load_data_profiles/%d_lower.csv' % (m + 1),
                                index=False, header=None)
     pd.DataFrame(upper).to_csv('../data/load_data_profiles/%d_upper.csv' % (m + 1),
                                index=False, header=None)
-
     # break

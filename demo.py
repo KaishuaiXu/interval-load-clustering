@@ -2,9 +2,9 @@ from interval_clustering.KMeans import k_means_interval
 import pandas as pd
 
 max_unchanged_iterations = 20
-for number_of_cluster in range(9, 10):
+for number_of_cluster in range(2, 11):
 
-    for m in range(0, 1):
+    for m in range(12):
         path = './data/load_data_profiles/%d_lower.csv' % (m + 1)
         lower = pd.read_csv(path, header=None)
         lower = lower.values
