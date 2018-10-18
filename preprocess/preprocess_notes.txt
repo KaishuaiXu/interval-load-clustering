@@ -1,0 +1,4 @@
+step 1: use CleanSeries.py to get the meter list of the complete load series;
+step 2: use PointToInterval.py to transfer the point series to interval series;
+step 3: use Monthly.py to get the separated monthly load profiles;
+step 4: use LoadProfiles.py to get the aggregated monthly load profiles for clustering;

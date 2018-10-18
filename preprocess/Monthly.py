@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 import pandas as pd
-import os
 
 month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 path = '../data/meters.csv'
