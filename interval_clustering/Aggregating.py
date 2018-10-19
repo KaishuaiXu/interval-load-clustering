@@ -3,7 +3,7 @@ import numpy as np
 
 month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 meters = pd.read_csv('../data/meters.csv')
-dist = 'cityblock'
+dist = 'hausdorff'
 
 for m in range(12):
     print(m)
@@ -29,8 +29,10 @@ for m in range(12):
             lower[cate[i]] = lower[cate[i]] + tmp_lower
             upper[cate[i]] = upper[cate[i]] + tmp_upper
 
-        path = '../data/load_data_clustered/' + dist + '/%d_%d.csv' % (m + 1, number_of_cluster)
+        path = '../data/load_data_clustered/' + dist + '/%d_%d_lower.csv' % (m + 1, number_of_cluster)
         pd.DataFrame(lower).to_csv(path, index=False, header=None)
+        path = '../data/load_data_clustered/' + dist + '/%d_%d_upper.csv' % (m + 1, number_of_cluster)
+        pd.DataFrame(upper).to_csv(path, index=False, header=None)
 
         # break
 
