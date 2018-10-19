@@ -1,9 +1,10 @@
 close all; clear; clc;
 
 %% Parameters
-dist = 'euclidean';
-m = 1;
-number_of_cluster = 8;
+dist = 'hausdorff';
+
+for m = 1 : 12
+for number_of_cluster = 2 : 10
 
 %% The aggregated series after clustering
 path = ['../data/load_data_clustered/' dist '/' num2str(m) '_' num2str(number_of_cluster) '_lower.csv'];
@@ -52,3 +53,5 @@ end
 
 path = ['../data/load_data_for_model/' dist '/' num2str(m) '_' num2str(number_of_cluster) '.mat'];
 save(path, 'train', 'test');
+end
+end
