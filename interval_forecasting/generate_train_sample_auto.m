@@ -1,7 +1,7 @@
 close all; clear; clc;
 
 %% Parameters
-dist = 'hausdorff';
+dist = 'cityblock';
 
 for m = 1 : 12
 for number_of_cluster = 2 : 10
@@ -60,6 +60,11 @@ end
 
 path = ['../data/load_data_for_model/' dist '/' num2str(m) '_' num2str(number_of_cluster) '.mat'];
 save(path, 'train', 'test', 'maximum', 'minimum');
+
+clear train;
+clear test;
+clear maximum;
+clear minimum;
 
 end
 end
