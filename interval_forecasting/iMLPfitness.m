@@ -1,4 +1,4 @@
-function [delEclDis,grad]=IMLPfitness_cpu(x)
+function [delEclDis,grad] = iMLPfitness(x)
 %interval Multi-Layer Perceptrons. (iMLP)
 %Reference: 
 %Munoz SanRoque,A.,Mate , C.,Sarabia,A.,Arroyo,J. iMLP: Applying Multi-Layer Perceptrons to Interval-Valued Data. Neural Processing Letters (2007) 25:157�C169.
@@ -7,29 +7,6 @@ function [delEclDis,grad]=IMLPfitness_cpu(x)
 
 
 global xC xR yC yR N ni no nh;
-
-% close all, clear all, clc
-% 
-% load('iDataTest.mat');
-% 
-% xC=(xl+xu)/2;
-% xR=(xu-xl)/2;
-% yC=(yl+yu)/2;
-% yR=(yu-yl)/2;
-% 
-% xC=xC';
-% xR=xR';
-% yC=yC';
-% yR=yR';
-% 
-% [ni N]=size(xC)
-% [no N]=size(yC)
-% nh=5 %number of hidden?
-% 
-% wih = 0.01*randn(nh,ni+1); %weight of input-hidden
-% who = 0.01*randn(no,nh+1); %weight of hidden-output
-% wihR = 0.01*randn(nh,ni+1); %weight of input-hidden
-% whoR = 0.01*randn(no,nh+1); %weight of hidden-output
 
 k=1;
 for i=1:nh
@@ -135,8 +112,6 @@ for i=1:nh
     end
 end
 for i=1:no
-%     for j=1:nh+1
-        grad(k:end)=delEoj;
-%         k=k+1;
-%     end
+    grad(k:end)=delEoj;
+
 end

@@ -5,7 +5,7 @@ indice = zeros(len,1);
 indices = crossvalind('Kfold', indice, k);
 mean_accuracy = 0;
 
-parfor i=1 : k
+for i=1 : k
     
     test = (indices==i);
     train = ~test;
@@ -16,8 +16,7 @@ parfor i=1 : k
     [Beta,~,~,~] = msvr(Xtrain,Ytrain,ker,C,epsi,sigma,tol);
     Ktest = kernelmatrix(ker,Xtest',Xtrain',sigma);
     Ypred = Ktest*Beta;
-    % accuracy = mean(mean(abs((Ytest - Ypred)./Ytest)));
-    % accuracy = mean(mean(abs((Ytest - Ypred))));
+
     [accuracy] = mape(Ytest,Ypred);
     mean_accuracy = mean_accuracy + accuracy;
     

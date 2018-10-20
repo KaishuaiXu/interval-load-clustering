@@ -12,8 +12,7 @@ load(path);
 tic;
 for j = 1 : number_of_cluster
     
-    [wih, who, measure, acc, out(j)] = iMLPMain(train(j).xu, train(j).xl, train(j).yu, train(j).yl);
-    disp(acc);
+    [wih, who, acc, out(j)] = iMLPMain(train(j).xu, train(j).xl, train(j).yu, train(j).yl);
 
     % break;
 end
