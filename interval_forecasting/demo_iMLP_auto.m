@@ -2,7 +2,7 @@ close all; clear; clc;
 
 %% Load samples
 dist = 'cityblock';
-for m = 10 : 12
+for m = 5 : 5
 for number_of_cluster = 2 : 10
 
 path = ['../data/load_data_for_model/' dist '/' num2str(m) '_' num2str(number_of_cluster) '.mat'];
@@ -15,11 +15,6 @@ for j = 1 : number_of_cluster
     display = ['Month = ' num2str(m) ', Number of cluster = ' num2str(number_of_cluster) ', Series = ' num2str(j)];
     disp(display);
     
-    best_acc = 1;
-    for iter = 1 : 5
-        
-    [wih, who, current_out] = iMLPMain(train(j).xu, train(j).xl, train(j).yu, train(j).yl);
-    
     xC=(test(j).xl + test(j).xu)/2;
     xR=(test(j).xu - test(j).xl)/2;
     
@@ -27,6 +22,11 @@ for j = 1 : number_of_cluster
     xR = xR';
 
     [ni, N]=size(xC);
+    
+    best_acc = 1;
+    for iter = 1 : 5
+        
+    [wih, who, current_out] = iMLPMain(train(j).xu, train(j).xl, train(j).yu, train(j).yl);
 
     hC = tansig(current_out.wih*[xC;ones(1,N)]);
     hR = tansig(current_out.wih*[xR;ones(1,N)]);
