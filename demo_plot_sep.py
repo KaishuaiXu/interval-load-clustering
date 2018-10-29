@@ -6,8 +6,8 @@ month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 meters = pd.read_csv('./data/meters.csv')
 dist = 'cityblock'
 
-m = 6
-number_of_cluster = 10
+m = 1
+number_of_cluster = 5
 for series in range(number_of_cluster):
     plt.figure(figsize=(14, 5))
 

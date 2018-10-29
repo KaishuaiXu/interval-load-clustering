@@ -6,9 +6,9 @@ month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 meters = pd.read_csv('./data/meters.csv')
 dist = 'cityblock'
 
-m = 2
+m = 6
 number_of_cluster = 5
-plt.figure(figsize=(8, 5))
+plt.figure(figsize=(16, 5))
 
 ave_upper = np.zeros(24)
 ave_lower = np.zeros(24)
@@ -38,7 +38,7 @@ for i in range(len(meters)):
         new_ticks = np.linspace(1, 24, 24)
         plt.xticks(new_ticks)
         plt.xlim((1, 24))
-        plt.fill_between(list(range(1, 25)), lower, upper, color='grey', alpha=0.1)
+        # plt.fill_between(list(range(1, 25)), lower, upper, color='grey', alpha=0.1)
         # break
 
 plt.savefig('demo.pdf')

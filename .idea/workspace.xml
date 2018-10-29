@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4681c0d6-a6c4-4fa1-a8c8-00560ff9d46c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interval_forecasting/demo_iMLP_auto.m" beforeDir="false" afterPath="$PROJECT_DIR$/interval_forecasting/demo_iMLP_auto.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_plot_interval.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo_plot_interval.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_plot_sep.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo_plot_sep.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,9 +17,10 @@
     <SUITE FILE_PATH="coverage/IntervalLoadForecasting$KMeans.coverage" NAME="KMeans Coverage Results" MODIFIED="1538488423930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interval_clustering" />
     <SUITE FILE_PATH="coverage/IntervalLoadForecasting$demo.coverage" NAME="demo Coverage Results" MODIFIED="1539833495030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IntervalLoadForecasting$demo_plot_2.coverage" NAME="demo_plot_2 Coverage Results" MODIFIED="1540367529534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/IntervalLoadForecasting$demo_plot_sep.coverage" NAME="demo_plot_sep Coverage Results" MODIFIED="1540371058262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/IntervalLoadForecasting$demo_plot_sep.coverage" NAME="demo_plot_sep Coverage Results" MODIFIED="1540603101113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IntervalLoadForecasting$demo_plot.coverage" NAME="demo_plot Coverage Results" MODIFIED="1540366914415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IntervalLoadForecasting$test.coverage" NAME="test Coverage Results" MODIFIED="1540363713013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/IntervalLoadForecasting$demo_plot_interval.coverage" NAME="demo_plot_interval Coverage Results" MODIFIED="1540606564168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IntervalLoadForecasting$Monthly.coverage" NAME="Monthly Coverage Results" MODIFIED="1539863457501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/preprocess" />
     <SUITE FILE_PATH="coverage/IntervalLoadForecasting$demo_plot3.coverage" NAME="demo_plot3 Coverage Results" MODIFIED="1540367752357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -40,35 +42,36 @@
     <session id="1487646465">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.6" value="5" />
           <entry key="project.open.time.8" value="7" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="3" />
-          <entry key="py" value="112" />
+          <entry key="py" value="114" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSV" value="3" />
-          <entry key="Python" value="112" />
+          <entry key="Python" value="114" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="4492" />
+          <entry key="py" value="4496" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="4492" />
+          <entry key="Python" value="4496" />
         </counts>
       </usages-collector>
     </session>
@@ -76,10 +79,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demo_plot_sep.py">
+        <entry file="file://$PROJECT_DIR$/demo_plot_interval.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+            <state relative-caret-position="102">
+              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -132,6 +135,7 @@
         <option value="$PROJECT_DIR$/demo_plot_2.py" />
         <option value="$PROJECT_DIR$/demo_plot3.py" />
         <option value="$PROJECT_DIR$/demo_plot_sep.py" />
+        <option value="$PROJECT_DIR$/demo_plot_interval.py" />
       </list>
     </option>
   </component>
@@ -142,7 +146,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="256" />
+    <option name="y" value="271" />
     <option name="width" value="1280" />
     <option name="height" value="728" />
   </component>
@@ -151,6 +156,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,7 +168,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -189,7 +194,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.demo_plot_sep">
+  <component name="RunManager" selected="Python.demo_plot_interval">
     <configuration name="demo_plot" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="IntervalLoadForecasting" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -256,6 +261,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="demo_plot_interval" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="IntervalLoadForecasting" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo_plot_interval.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="demo_plot_sep" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="IntervalLoadForecasting" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -278,42 +305,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="IntervalLoadForecasting" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python.test" />
       <item itemvalue="Python.demo_plot" />
       <item itemvalue="Python.demo_plot_2" />
       <item itemvalue="Python.demo_plot3" />
       <item itemvalue="Python.demo_plot_sep" />
+      <item itemvalue="Python.demo_plot_interval" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.demo_plot_interval" />
         <item itemvalue="Python.demo_plot_sep" />
         <item itemvalue="Python.demo_plot3" />
         <item itemvalue="Python.demo_plot_2" />
         <item itemvalue="Python.demo_plot" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -331,10 +336,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="728" extended-state="0" />
+    <frame x="256" y="271" width="1280" height="728" extended-state="0" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.20113085" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.20436187" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -351,7 +356,7 @@
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="right" id="Database" order="0" weight="0.32956383" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
-      <window_info anchor="right" id="SciView" order="2" weight="0.32956383" />
+      <window_info active="true" anchor="right" id="SciView" order="2" visible="true" weight="0.32956383" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
     </layout>
@@ -479,55 +484,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo.py" />
     <entry file="file://$PROJECT_DIR$/demo_clustering.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo_plot_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="25" selection-start-line="25" selection-end-line="25" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo_plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo_plot3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/demo_plot_2.py" />
+    <entry file="file://$PROJECT_DIR$/demo_plot.py" />
+    <entry file="file://$PROJECT_DIR$/demo_plot3.py" />
     <entry file="file://$PROJECT_DIR$/demo_plot_sep.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        <state relative-caret-position="187">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo_plot_interval.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

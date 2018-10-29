@@ -4,3 +4,6 @@ test.py
 /__pycache__
 /interval_forecasting/iMLP_result
 /interval_forecasting/MSVR_result
+demo_plot_interval.py
+demo_plot_sep.py
+

@@ -1,8 +1,8 @@
 close all; clear; clc;
 
 %% Load samples
-dist = 'euclidean';
-m = 1;
+dist = 'hausdorff';
+m = 11;
 number_of_cluster = 2;
 
 path = ['../data/load_data_for_model/' dist '/' num2str(m) '_' num2str(number_of_cluster) '.mat'];
@@ -12,8 +12,11 @@ load(path);
 tic;
 for j = 1 : number_of_cluster
     
+    display = ['Month = ' num2str(m) ', Number of cluster = ' num2str(number_of_cluster) ', Series = ' num2str(j)];
+    disp(display);
+    
     best_acc = 1;
-    for iter = 1 : 10
+    for iter = 1 : 5
         
     [wih, who, current_out] = iMLPMain(train(j).xu, train(j).xl, train(j).yu, train(j).yl);
     
@@ -47,9 +50,10 @@ for j = 1 : number_of_cluster
     end
     
     end
-    break;
+    % break;
 end
 path = ['./iMLP_result/' dist '/' num2str(m) '_' num2str(number_of_cluster) '.mat'];
 save(path, 'out');
-    
+
 toc;
+

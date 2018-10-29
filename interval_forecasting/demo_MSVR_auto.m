@@ -1,9 +1,9 @@
 close all; clear; clc;
 
 %% Load samples
-dist = 'euclidean';
-m = 1;
-number_of_cluster = 2;
+dist = 'cityblock';
+for m = 1 : 12
+for number_of_cluster = 2 : 10
 
 path = ['../data/load_data_for_model/' dist '/' num2str(m) '_' num2str(number_of_cluster) '.mat'];
 load(path);
@@ -66,3 +66,12 @@ path = ['./MSVR_result/' dist '/' num2str(m) '_' num2str(number_of_cluster) '.ma
 save(path, 'out');
 
 toc;
+
+clear out;
+clear train;
+clear test;
+clear maximum;
+clear minimum;
+
+end
+end
