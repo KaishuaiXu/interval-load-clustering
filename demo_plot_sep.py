@@ -64,3 +64,5 @@ for series in range(number_of_cluster):
     path = 'cluster_fig_%d_%d_%d.pdf' % (m, number_of_cluster, series)
     plt.savefig(path)
     plt.show()
+
+    break

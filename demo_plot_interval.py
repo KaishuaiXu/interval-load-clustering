@@ -27,7 +27,7 @@ for i in range(len(meters)):
     lower = pd.read_csv(path, header=None)
     lower = np.squeeze(lower.values)
 
-    if cate[i] == 0:
+    if cate[i] == 3:
 
         n = n + 1
 

@@ -3,7 +3,7 @@
 
 %Author: May, 2014, by Zhongyi Hu (huzhyi21@hust.edu.cn), Huazhong University of Science and Technology
 
-function [wih, who, out] = iMLPMain(xu, xl, yu, yl)
+function [wih, who] = iMLPMain(xu, xl, yu, yl)
 
 global xC xR yC yR N ni no nh 
 
@@ -41,17 +41,14 @@ for i = 1:no
     end
 end
 
-hC = tansig(wih * [xC;ones(1, N)]);
-hR = tansig(wih * [xR;ones(1, N)]);
-yCt = tansig(who * [hC;ones(1, N)]);
-yRt = (who * [hR;ones(1, N)]);
+%hC = tansig(wih * [xC;ones(1, N)]);
+%hR = tansig(wih * [xR;ones(1, N)]);
+%yCt = tansig(who * [hC;ones(1, N)]);
+%yRt = tansig(who * [hR;ones(1, N)]);
 
-Y = [yC', yR'];
-F = [yCt', yRt'];
-Y = iCR2Inter(Y);
-Fi = iCR2Inter(F);
+%Y = [yC', yR'];
+%F = [yCt', yRt'];
+%Y = iCR2Inter(Y);
+%Fi = iCR2Inter(F);
 % acc = mape(Y, Fi);
 
-out.wih = wih;
-out.who = who;
-% out.mape = acc;
