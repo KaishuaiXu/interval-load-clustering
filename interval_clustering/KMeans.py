@@ -2,7 +2,7 @@
 
 import numpy as np
 from random import shuffle
-from interval_clustering.Euclidean import dist, update_centroids, update_lambda
+from interval_clustering.CityBlock import dist, update_centroids, update_lambda
 
 import matplotlib.pyplot as plt
 import seaborn as sns

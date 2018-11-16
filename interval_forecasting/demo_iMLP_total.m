@@ -1,11 +1,12 @@
 close all; clear; clc;
 
 %% Load samples
-dist = 'hausdorff';
-m = 8;
-number_of_cluster = 9;
 
-path = ['../data/load_data_for_model/' dist '/' num2str(m) '_' num2str(number_of_cluster) '.mat'];
+for m = 1 : 12
+
+number_of_cluster = 1;
+    
+path = ['../data/load_data_for_model/' num2str(m) '_' num2str(number_of_cluster) '.mat'];
 load(path);
 
 %% Train
@@ -54,7 +55,14 @@ for j = 1 : number_of_cluster
     end
     % break;
 end
-path = ['./iMLP_result/' dist '/' num2str(m) '_' num2str(number_of_cluster) '.mat'];
+path = ['./iMLP_result/' num2str(m) '_' num2str(number_of_cluster) '.mat'];
 save(path, 'out');
 
+clear out;
+clear train;
+clear test;
+clear maximum;
+clear minimum;
+
 toc;
+end

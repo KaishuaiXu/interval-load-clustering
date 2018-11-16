@@ -12,6 +12,10 @@ for i in range(l):
     cursor.execute(sql)
     data = pd.DataFrame(cursor.fetchall())
 
+    # 缺失值处理
+    data[3][12337] = (data[3][12336] + data[3][12339]) / 2
+    data[3][12338] = (data[3][12336] + data[3][12339]) / 2
+
     # 原序列区间化
     upper = []
     lower = []

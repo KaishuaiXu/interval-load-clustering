@@ -9,6 +9,10 @@ type = np.squeeze(cursor.fetchall())
 
 refined_series = []
 for i in range(len(type)):
+
+    if type[i] == 1035:
+        continue
+
     cursor.execute("SELECT load_data FROM load_series_1 WHERE meter_id=%d" % type[i])
     load_series = np.squeeze(cursor.fetchall())
     t = 0

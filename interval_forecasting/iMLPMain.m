@@ -17,8 +17,9 @@ xR = xR';
 yC = yC';
 yR = yR';
 
-[ni N] = size(xC); %number of input (ni), number of output (no)
-[no N] = size(yC);
+[ni N] = size(xC); %number of input (ni)
+[no N] = size(yC); %number of output (no)
+
 nh = 4; %number of hidden
 
 x = 1 * randn(1, nh * (ni + 1) + no * (nh + 1)); 
@@ -50,5 +51,4 @@ end
 %F = [yCt', yRt'];
 %Y = iCR2Inter(Y);
 %Fi = iCR2Inter(F);
-% acc = mape(Y, Fi);
-
+%acc = mape(Y, Fi);

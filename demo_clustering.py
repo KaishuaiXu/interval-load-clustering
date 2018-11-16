@@ -2,9 +2,11 @@ from interval_clustering.KMeans import k_means_interval
 import pandas as pd
 
 max_unchanged_iterations = 20
-for number_of_cluster in range(2, 11):
 
-    for m in range(12):
+for m in range(2, 3):
+
+    for number_of_cluster in range(2, 11):
+
         path = './data/load_data_profiles/%d_lower.csv' % (m + 1)
         lower = pd.read_csv(path, header=None)
         lower = lower.values
@@ -27,5 +29,5 @@ for number_of_cluster in range(2, 11):
 
             # break
 
-        path = './clusters/euclidean/%d_%d.csv' % (m + 1, number_of_cluster)
+        path = './clusters/cityblock/%d_%d.csv' % (m + 1, number_of_cluster)
         pd.DataFrame(best_cluster).to_csv(path, header=None, index=False)
