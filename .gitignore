@@ -2,8 +2,6 @@
 
 /data
 
-test.py
-
 /__pycache__
 
 /plot
@@ -12,6 +10,6 @@ test.py
 
 /interval_forecasting
 
-.idea
+test.py
 
-.vscode
+.idea
