@@ -1,2 +1,2 @@
-# interval-load-clustering
-interval load clustering
+# Interval-load-clustering
+Interval load clustering
