@@ -1,2 +1,2 @@
-# interval-load-forecasting
-interval load forecasting
+# interval-load-clustering
+interval load clustering
