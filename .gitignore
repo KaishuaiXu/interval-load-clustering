@@ -13,3 +13,5 @@
 test.py
 
 .idea
+
+/interval_clustering/GenerateSample.py
