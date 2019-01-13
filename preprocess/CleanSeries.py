@@ -10,11 +10,13 @@ type = np.squeeze(cursor.fetchall())
 refined_series = []
 for i in range(len(type)):
 
-    if type[i] == 1035:
+    if type[i] == 1035:  # 删去异常序列
         continue
 
     cursor.execute("SELECT load_data FROM load_series_1 WHERE meter_id=%d" % type[i])
     load_series = np.squeeze(cursor.fetchall())
+
+    # 保留缺失值个数不超过10的序列
     t = 0
     for l in load_series:
         if l == 0:
@@ -22,8 +24,7 @@ for i in range(len(type)):
     if t < 10:
         refined_series.append(type[i])
         print(type[i])
-    # break
 
 meters = pd.DataFrame(refined_series)
 meters.columns = ['meter_id']
-meters.to_csv('../data/meters.csv', index=False)
+meters.to_csv('../data/meters.csv', index=False)  # 获得可用的序列id

@@ -7,12 +7,13 @@ cursor = con.cursor()
 
 meters = pd.read_csv('../data/meters.csv')
 l = len(meters)
+
 for i in range(l):
     sql = "select * from load_series_1 where meter_id=%d" % (meters['meter_id'][i])
     cursor.execute(sql)
     data = pd.DataFrame(cursor.fetchall())
 
-    # 缺失值处理
+    # 缺失值处理(数据集中所有序列在该时刻均缺失)
     data[3][12337] = (data[3][12336] + data[3][12339]) / 2
     data[3][12338] = (data[3][12336] + data[3][12339]) / 2
 

@@ -33,7 +33,3 @@ for m in range(12):
         pd.DataFrame(lower).to_csv(path, index=False, header=None)
         path = '../data/load_data_clustered/' + dist + '/%d_%d_upper.csv' % (m + 1, number_of_cluster)
         pd.DataFrame(upper).to_csv(path, index=False, header=None)
-
-        # break
-
-    # break

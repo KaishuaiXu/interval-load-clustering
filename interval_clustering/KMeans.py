@@ -8,6 +8,15 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 
+'''
+
+lowers: n * dimension 的np数组
+uppers: n * dimension 的np数组
+number_of_cluster: 聚类个数
+max_unchange_iterations: 聚类稳定指标
+
+'''
+
 def k_means_interval(lowers, uppers, number_of_cluster, max_unchanged_iterations):
 
     number_of_sample = len(uppers)
@@ -16,8 +25,8 @@ def k_means_interval(lowers, uppers, number_of_cluster, max_unchanged_iterations
     # 初始化聚类中心
     vector_indices = list(range(number_of_sample))
     shuffle(vector_indices)
-    centroids_upper = np.array([uppers[vector_indices[i]] for i in range(number_of_cluster)])
-    centroids_lower = np.array([lowers[vector_indices[i]] for i in range(number_of_cluster)])
+    centroids_upper = np.array([uppers[vector_indices[i]] for i in range(number_of_cluster)])  # upper中心
+    centroids_lower = np.array([lowers[vector_indices[i]] for i in range(number_of_cluster)])  # lower中心
 
     # 初始化权重Lambda
     lamb = np.ones([dim])
@@ -37,7 +46,6 @@ def k_means_interval(lowers, uppers, number_of_cluster, max_unchanged_iterations
         # 更新聚类中心
         for k in range(number_of_cluster):
             assignment = np.where(cluster == k)[0]
-            print(assignment.shape)
 
             if assignment.shape[0] == 0:
                 return [], 999999
@@ -47,15 +55,18 @@ def k_means_interval(lowers, uppers, number_of_cluster, max_unchanged_iterations
         # 更新权重Lambda
         lamb = update_lambda(lowers, uppers, centroids_lower, centroids_upper, cluster, dim)
 
+        # 更新样本归属
         test = 0
         tmp = dist(lowers, uppers, centroids_lower[0], centroids_upper[0], lamb)
         for k in range(1, number_of_cluster):
             distances = dist(lowers, uppers, centroids_lower[k], centroids_upper[k], lamb)
             tmp = np.vstack((tmp, distances))
         total_dist = np.min(tmp, axis=0).sum()
-        # print(total_dist)
+
         original_cluster = cluster
         cluster = np.argmin(tmp, axis=0)
+
+        # 判断样本归属是否改变
         for i in range(number_of_sample):
             if cluster[i] != original_cluster[i]:
                 test = test + 1

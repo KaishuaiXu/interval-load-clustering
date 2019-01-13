@@ -21,7 +21,7 @@ for m in range(12):
 
         lower.append(tmp_l)
         upper.append(tmp_u)
-        # break
+
     lower = np.array(lower)
     upper = np.array(upper)
 
@@ -29,4 +29,3 @@ for m in range(12):
                                index=False, header=None)
     pd.DataFrame(upper).to_csv('../data/load_data_profiles/%d_upper.csv' % (m + 1),
                                index=False, header=None)
-    # break
