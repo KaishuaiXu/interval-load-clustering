@@ -31,7 +31,5 @@ for m in range(12):   # 月份循环
                     best_cluster = cluster
                     minimum = total_dist
 
-            # break
-
         path = './clusters/' + dist + '/%d_%d.csv' % (m + 1, number_of_cluster)
         pd.DataFrame(best_cluster).to_csv(path, header=None, index=False)
